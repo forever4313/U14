@@ -1,0 +1,121 @@
+ext {
+    //Android
+    androidBuildToolsVersion = "23.0.1"
+    androidCompileSdkVersion = 25
+    androidTargetSdkVersion = 25
+    androidMinSdkVersion = 19
+    androidApplicationId = 'online.u148'
+    androidVersionCode = 1002024
+    androidVersionName = "1.0.0"
+    androidSupportV7Version = '25.3.0'
+    androidCardViewVersion = '25.3.0'
+    androidSupportDesignVersion = '25.3.0'
+    androidButterKnifeVersion = '7.0.1'
+    androidImageLoaderGlideVersion = '3.7.0'
+    androidImageLoaderGlideOkHttpIntergrationVersion ='1.4.0@aar'
+    androidOkhttpVersion = '3.2.0';
+    andoridOkhttpLoggVersion = '3.2.0'
+    androidRetrofitVersion = '2.0.1';
+    androidRxJavaVersion = '1.1.2';
+    rxAndroidVersion = '1.1.0';
+    jodaVersion = '2.9.3';
+    eventBusVersion ='3.0.0';
+	rxBindingVersion = '1.0.1';
+    androidRetrofitAdapterVersion ='2.0.1';
+    materialdialogVersion = '0.8.5.9';
+    leakcanaryVersion = '1.4-beta2';
+    gsonVersion = '2.6.1';
+    okioVersion = '1.6.0';
+    wireVersion = '2.1.2';
+    recyclerviewVersion = '25.3.0';
+    supportV4Version = '25.3.0';
+    getuiVersion = '2.9.0.0';
+    bottomNaviVersion = '1.4.1';
+    multiTypeVersion = '2.5.0';
+
+    //Libraries
+    daggerVersion = '2.8'
+
+    //Libraries
+    javaxAnnotationVersion = '1.0'
+    androidAnnotationsVersion = '25.0.1'
+    javaxInjectVersion = '1'
+
+
+    mvpLibDependencies = [
+            supportCompat: "com.android.support:appcompat-v7:${androidSupportV7Version}",
+    ]
+
+    commonLibDependencies = [
+            supportCompat: "com.android.support:appcompat-v7:${androidSupportV7Version}",
+            gson : "com.google.code.gson:gson:${gsonVersion}",
+            supportDesign: "com.android.support:design:${androidSupportDesignVersion}",
+            joda : "joda-time:joda-time:${jodaVersion}"
+
+    ]
+
+    appDependencies = [
+            supportCompat: "com.android.support:appcompat-v7:${androidSupportV7Version}",
+            supportDesign: "com.android.support:design:${androidSupportDesignVersion}",
+            cardView : "com.android.support:cardview-v7:${androidCardViewVersion}",
+            butterKnife: "com.jakewharton:butterknife:${androidButterKnifeVersion}",
+            imgLoaderGlide : "com.github.bumptech.glide:glide:${androidImageLoaderGlideVersion}",
+            glideOkhttpIntergration : "com.github.bumptech.glide:okhttp3-integration:${androidImageLoaderGlideOkHttpIntergrationVersion}",
+            okHttp : "com.squareup.okhttp3:okhttp:${androidOkhttpVersion}",
+            okHttpLogging :"com.squareup.okhttp3:logging-interceptor:${andoridOkhttpLoggVersion}",
+            eventBus :"org.greenrobot:eventbus:${eventBusVersion}",
+            materialdialog :"com.afollestad.material-dialogs:core:${materialdialogVersion}",
+            debugleakcanary: "com.squareup.leakcanary:leakcanary-android:${leakcanaryVersion}",
+            releaseleakcanary: "com.squareup.leakcanary:leakcanary-android-no-op:${leakcanaryVersion}",
+            okio:"com.squareup.okio:okio:${okioVersion}",
+            wire:"com.squareup.wire:wire-runtime:${wireVersion}",
+            getui : "com.getui:sdk:${getuiVersion}",
+            daggerCompiler:     "com.google.dagger:dagger-compiler:${daggerVersion}",
+            dagger:             "com.google.dagger:dagger:${daggerVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            retrofitConverterGson: "com.squareup.retrofit2:converter-gson:${androidRetrofitVersion}",
+            retrofitAdapter: "com.squareup.retrofit2:adapter-rxjava:${androidRetrofitAdapterVersion}",
+            bottomNavi:"com.ashokvarma.android:bottom-navigation-bar:${bottomNaviVersion}",
+            multiType:"me.drakeet.multitype:multitype:${multiTypeVersion}",
+            rxBindingSupport:"com.jakewharton.rxbinding:rxbinding-support-v4:${rxBindingVersion}",
+            rxBindingAppcompat:"com.jakewharton.rxbinding:rxbinding-appcompat-v7:${rxBindingVersion}",
+            rxBindingRecyclerview:"com.jakewharton.rxbinding:rxbinding-recyclerview-v7:${rxBindingVersion}",
+    ]
+
+    domainDependencies = [
+            rxJava : "io.reactivex:rxjava:${androidRxJavaVersion}",
+            javaxAnnotation:    "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:        "javax.inject:javax.inject:${javaxInjectVersion}",
+
+    ]
+
+
+    frameworkDependencies = [
+            rxJava : "io.reactivex:rxjava:${androidRxJavaVersion}",
+            rxAndroid:"io.reactivex:rxandroid:${rxAndroidVersion}",
+
+
+    ]
+
+    dataDependencies = [
+            rxJava : "io.reactivex:rxjava:${androidRxJavaVersion}",
+            okHttp : "com.squareup.okhttp3:okhttp:${androidOkhttpVersion}",
+            retrofit : "com.squareup.retrofit2:retrofit:${androidRetrofitVersion}",
+            gson : "com.google.code.gson:gson:${gsonVersion}",
+            rxAndroid:"io.reactivex:rxandroid:${rxAndroidVersion}",
+            javaxAnnotation:"javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:"javax.inject:javax.inject:${javaxInjectVersion}",
+            androidAnnotations: "com.android.support:support-annotations:${androidAnnotationsVersion}",
+
+    ]
+
+    multiImageDependencies = [
+            supportCompat: "com.android.support:appcompat-v7:${androidSupportV7Version}",
+            recyclerview : "com.android.support:recyclerview-v7:${recyclerviewVersion}",
+            supportV4 : "com.android.support:support-v4:${supportV4Version}",
+            rxjava : "io.reactivex:rxjava:${androidRxJavaVersion}",
+            rxandroid : "io.reactivex:rxandroid:${rxAndroidVersion}",
+            imgLoaderGlide : "com.github.bumptech.glide:glide:${androidImageLoaderGlideVersion}",
+    ]
+
+}

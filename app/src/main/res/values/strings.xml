@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">U148</string>
+    <string name="transition_shot">backdrop</string>
+    <string name="transition_shot_background">transition_shot_background</string>
+</resources>

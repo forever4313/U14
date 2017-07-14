@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<live.u14.app.views.widget.RevealFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/content_layout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:orientation="vertical"
+                                             android:transitionGroup="false">
+
+
+    <live.u14.app.views.widget.ParallaxScrimageView
+            android:id="@+id/backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/backdrop_height"
+            android:minHeight="@dimen/fab_min_offset"
+            android:background="@color/light_grey"
+            android:scaleType="centerCrop"
+            android:stateListAnimator="@animator/image_pin"
+            android:transitionName="@string/transition_shot"/>
+    <live.u14.app.views.video.LandLayoutVideo
+            android:id="@+id/detail_player"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/backdrop_height"
+    android:visibility="invisible">
+
+    </live.u14.app.views.video.LandLayoutVideo>
+
+    <com.youku.cloud.player.YoukuPlayerView
+            android:id="@+id/player_view"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/backdrop_height"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true">
+
+    </com.youku.cloud.player.YoukuPlayerView>
+
+    <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:elevation="8dp"
+            android:layout_marginTop="@dimen/statubar_height"
+            android:visibility="invisible"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            tools:ignore="ContentDescription"/>
+    <live.u14.app.views.widget.FabToggle
+            android:id="@+id/fab_play"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/fab_play"
+            android:clickable="true"
+            android:elevation="12dp"
+            android:visibility="invisible"
+            android:padding="16dp"
+            android:src="@drawable/ic_play_arrow_black_24dp"
+            android:tint="@android:color/white"/>
+
+
+</live.u14.app.views.widget.RevealFrameLayout>
